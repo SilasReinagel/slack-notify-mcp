@@ -1,0 +1,23 @@
+{
+  "name": "slack-webhook-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for posting messages to Slack webhooks",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch run src/index.ts",
+    "build": "bun build src/index.ts --outdir=dist --target=node"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "axios": "^1.7.9",
+    "zod": "^3.25.64"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  },
+  "keywords": ["mcp", "slack", "webhook", "modelcontextprotocol"],
+  "author": "",
+  "license": "MIT"
+} 

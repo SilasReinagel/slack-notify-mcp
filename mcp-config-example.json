@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "slack-webhook": {
+      "command": "bun",
+      "args": [
+        "run", 
+        "src/index.ts",
+        "--webhook-url",
+        "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+        "--channel",
+        "#general",
+        "--username",
+        "MCP Assistant",
+        "--icon-emoji",
+        ":robot_face:"
+      ],
+      "cwd": "/absolute/path/to/slack-webhook-mcp-server"
+    },
+    "slack-bot": {
+      "command": "bun",
+      "args": [
+        "run", 
+        "src/index.ts",
+        "--bot-token",
+        "xoxb-YOUR-BOT-TOKEN-HERE",
+        "--channel",
+        "CXXXXXXXXXX",
+        "--username",
+        "MCP Assistant",
+        "--icon-emoji",
+        ":speech_balloon:"
+      ],
+      "cwd": "/absolute/path/to/slack-webhook-mcp-server"
+    }
+  }
+} 
