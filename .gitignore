@@ -42,6 +42,9 @@ Thumbs.db
 # Cursor MCP configuration (contains sensitive tokens)
 .cursor/mcp.json
 
+# Project documents/specs (not part of source code)
+.prds
+
 # Temporary files
 *.tmp
 *.temp
