@@ -346,4 +346,8 @@ Examples:
 
 const config = parseArgs();
 const server = new SlackWebhookMCPServer(config);
-server.run().catch(console.error); 
+server.run().catch(console.error);
+
+// Export types for consumers of this package
+export * from "../types/slack.js";
+export { SlackWebhookMCPServer }; 
