@@ -100,9 +100,15 @@ ehthumbs.db
 install-local-dev.sh
 mcp-config-example.json
 
+# Cursor configuration (may contain sensitive tokens)
+.cursor/
+
 # Git files
 .git/
 .gitignore
+
+# Documentation files (not needed in package)
+PUBLISHING.md
 
 # Test files
 **/*.test.*
