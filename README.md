@@ -75,7 +75,7 @@ bun install
         "--bot-token",
         "xoxb-YOUR-BOT-TOKEN",
         "--channel",
-        "CXXXXXXXXXX",
+                  "CXXXXXXXXXX",
         "--username",
         "MCP Bot"
       ],
