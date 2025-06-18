@@ -6,7 +6,7 @@
   "types": "dist/src/index.d.ts",
   "type": "module",
   "bin": {
-    "slack-webhook-mcp-server": "dist/src/index.js"
+    "slack-notify-mcp": "dist/src/index.js"
   },
   "files": [
     "dist/**/*",
