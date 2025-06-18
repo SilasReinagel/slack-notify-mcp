@@ -1,6 +1,6 @@
 {
   "name": "slack-notify-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for posting messages to Slack webhooks and bot API",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -56,4 +56,4 @@
   ],
   "author": "Your Name <your.email@example.com>",
   "license": "MIT"
-} 
+}
