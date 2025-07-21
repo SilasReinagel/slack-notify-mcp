@@ -37,7 +37,7 @@ class SlackWebhookMCPServer {
     this.server = new Server(
       {
         name: "slack-webhook-mcp-server",
-        version: "1.0.0",
+        version: "0.3.0",
       },
       {
         capabilities: {
@@ -87,8 +87,11 @@ class SlackWebhookMCPServer {
         throw new Error("Message is too long (max 4000 characters)");
       }
 
+      // Convert standard markdown bold to slack markdown bold
+      const processedMessage = message.replace(/\*\*(.*?)\*\*/g, '*$1*');
+
       try {
-        await this.postToSlack({ message });
+        await this.postToSlack({ message: processedMessage });
 
         return {
           content: [
